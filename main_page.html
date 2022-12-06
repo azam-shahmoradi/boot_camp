@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        html{
+            direction: rtl;
+        }
+    div{
+        width:500px;
+        height:500px;
+        display:inline-block;
+        background-color: rgb(230, 185, 185);
+          overflow:hidden; 
+    }
+    p{ 
+        overflow: hidden;
+        display: inline-block;
+        text-align: justify;
+        color: crimson;
+    }
+    .box1{
+         position: relative;
+         width:500px;
+        height:500px;
+        display:inline-block;
+        background-color: rgb(230, 185, 185);
+        margin :50px calc(50%-500px) ;
+        z-index:1;    
+    }
+    .box2{
+    position: absolute;
+    font-size: xx-large;
+    color:aliceblue;
+    width:30px;
+    height: 30px;
+    top: 50%;
+left:12px;
+    border:1px solid rgb(178, 178, 197);
+    z-index:2;
+    background-color:rgb(198, 198, 240);
+    }
+    .box3{
+    color: aliceblue;
+    position: absolute;
+    font-size: xx-large;
+    background-color: rgb(198, 198, 240);
+    width:30px;
+    height: 30px;
+    top: 50%;
+    right:12px;
+    border:1px solid rgb(178, 178, 197);
+    z-index:3;
+    }
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:blueviolet;   
+    }
+    img{
+        border-radius: 5px;
+    }
+        
+    
+    </style>
+    
+</head>
+<body>
+    
+       
+        <div class="box1">
+            <img src="1.png" width="500px" height="500px">
+            <div > <input  class="box2" type="submit" value="<"> </div>
+            <div > <input  class="box3" type="submit" value=">"> </div>
+        </div>
+        <div>
+            <h1>Lorem ipsum </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe autem impedit quasi maiores optio, odit repudiandae sint quia porro! Fuga minima aliquam maxime consequuntur itaque obcaecati architecto. Inventore exercitationem eos officia cupiditate. Ea qui optio enim. Velit rem pariatur fuga quos, qui sapiente quasi eum cupiditate odit sit, fugiat illum.</p>
+        </div>
+    
+    
+</body>
+</html>

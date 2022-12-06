@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تمرین  +  و ~</title>
+    <style>
+        div
+        {
+           
+            border: 1px dashed burlywood;
+        }
+        p
+        {
+            background-color: brown;
+            font-size: large;
+            color: blue;
+        }
+        /* اولین تگ p که بلافاصله بعد از div قراردارد را تغییر میدهد*/
+        /*شامل تگ هایی که داخل div  هستند نخواهد شد */
+        div + p{
+            color: yellow;
+        }
+        /* همه تگ های p که بعد از div  هستند را سبز میکند و تغییر میدهد */
+        /*شامل تگ هایی که داخل div  هستند نخواهد شد */
+        div ~ p{
+            color:green;
+            font-size: xx-large;
+        }
+        /* تمام تگ هایی که از نوع کلاس myp هستند و بعد از div  قرار گرفته اند*/
+        div ~ .myp{
+            color:chocolate;
+            background-color: aquamarine;
+            
+        }
+    </style>
+</head>
+<body>
+     <div>
+        Lorem ipsum dolor sit amet.
+     </div>
+    
+     <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, quia!
+     </p>
+     <p class="myp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro at voluptatum explicabo, quaerat eum cum dicta itaque, laudantium odit ipsa maiores neque voluptatem sequi velit? Porro cumque ipsa tempora.
+     </p>
+     <div>
+        <!-- چون تگ p داخل div تعریف شده است استایل را از `  و + نمیگیرد-->
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, harum.
+        </p>
+        <!--چون کلاس myp داخل تگ div تعریف شده است ، استایل اعمال نمیشود-->
+        <span class="myp">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+     </div>
+</body>
+</html>

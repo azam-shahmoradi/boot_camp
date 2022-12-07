@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>تمرین گروه اول</title>
+    <style>
+        html{
+            direction: rtl;
+        }
+        .top_box
+        {
+            width: 100%;
+            height: 150px;
+            background-color:rgb(240, 16, 147);
+            z-index: 1;
+            position: relative;
+        }
+        .nav_bar
+        {
+            position: absolute;
+            display:inline-block;
+            border:1px solid rgb(240, 16, 147);
+            box-shadow: 5px;
+            width:calc(100% - 100px);
+            margin: 50px 50px;
+            height:600px;
+            background-image: linear-gradient(to bottom,rgb(250, 102, 188),rgb(231, 227, 230));
+            border-radius: 20px;
+            z-index: 1;
+        }
+        .content_box1
+        {
+            position: absolute;
+            width:calc(100%/4.2);
+            height:350px;
+            background-color: aliceblue;
+            display: inline-block;
+            z-index: 2;
+            border-radius: 10px;
+            top:100px;
+            left:10px;
+            box-shadow: 5px 5px 20px rgb(131, 128, 130);
+        }
+        .content_box2
+        {
+            position: absolute;
+            width:calc(100%/4.2);
+            height:350px;
+            background-color: aliceblue;
+            display: inline-block;
+            z-index: 2;
+            border-radius: 10px;
+            left:calc(100%/4.2 + 20px);
+            top:100px;
+            
+            box-shadow: 5px 5px 20px rgb(131, 128, 130);
+        }
+        .content_box3
+        {
+            position: absolute;
+            width:calc(100%/4.2);
+            height:450px;
+            background-color: aliceblue;
+            display: inline-block;
+            z-index: 2;
+            border-radius: 10px;
+            left:calc(100%/4.2 *2  + 30px);
+            top:100px;
+            
+            box-shadow: 5px 5px 20px rgb(131, 128, 130);
+        }
+        .content_box4
+        {
+            position: absolute;
+            width:calc(100%/4.2);
+            height:350px;
+            background-color: aliceblue;
+            display: inline-block;
+            z-index: 2;
+            border-radius: 10px;
+            left:calc(100%/4.2 *3  + 40px);
+            top:100px;
+            
+            box-shadow: 5px 5px 20px rgb(131, 128, 130);
+        }
+        img{
+            float: right;
+            direction: rtl;
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            top: 10px;
+            margin:20px 20px;
+            right: calc(100%-30%);
+
+        }
+        span{
+           
+            direction: rtl;
+            margin: 2px;
+        }
+       i.far{
+            float:right;
+            margin:30px 30px 5px 20px;
+            padding:2px 2px;
+           
+        }
+        span  i.fas{
+            float:right;
+            margin:30px 30px 5px 20px;
+            padding:2px 2px;
+            
+        }
+        .searchBox{
+            width: 20%;
+            height:30px;
+            border: 1px solid   rgb(236, 37, 153) ;
+            border-radius: 20px;
+            top: 20px;
+            background-color: rgb(250, 102, 188);
+            float:right;
+            margin:25px 25px 5px 20px;
+            color: white;
+            text-align: left;
+            box-shadow: 2px 2px 2px rgb(250, 102, 188);
+            padding: 2px;
+            
+     
+        }
+        .profile{
+            display:inline-block; 
+            margin:20px 30%;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            
+        }
+        .btn{
+            background-color: rgb(236, 234, 234);
+            border-radius: 5px;
+            margin:0px 2px;
+        }
+        .shoes{
+            width: 100%;
+            height: 40%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            margin:0px;
+        }
+        /* Style the tab */
+      
+    </style>
+</head>
+<body>
+    <div class="top_box">
+    <div class="nav_bar">
+        <div class="">
+            <span> <img src="1.jpg"> </span>
+            <span>
+                <i class="far fa-bell" style="font-size:20px;color:white"></i>
+                </span><span>
+                <i class="fas fa-search" style="font-size:20px;color:white"></i>
+                
+                    <input class="searchBox" type="text" placeholder="Text Input">
+                
+                
+            </span>
+
+        </div>
+        <div class="content_box1">
+            <img class="profile" src="1.jpg">
+            <div style="text-align:center; font-weight: bold;">Besty Braddock</div>
+            <div style="width:70%; height:30%; text-align:center; margin:5px 15%">Lorem, ipsum dolor sit amet consect error harum possimus culpa atque dicta fuga!</div>
+            <div style="align-content: center; margin:5px 20%">
+                <input class="btn" type="button" value="Illustration">
+                <input class="btn" type="button" value="Art">
+                <input class="btn" type="button" value="Design">
+            </div>
+        </div>
+        <div class="content_box2">
+            
+        </div>
+        <div class="content_box3">
+            <img src="2.jpg" class="shoes">
+            <div style="text-align:left; font-weight: bold; margin:30% 15%;">Card Component</div>
+        </div>   
+        <div class="content_box4"></div>    
+    </div>
+    
+</div>
+</body>
+</html>

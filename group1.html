@@ -78,7 +78,7 @@
             position: absolute;
             width:calc(100%/4.2);
             height:350px;
-            background-color: aliceblue;
+            background-color: rgb(250, 102, 188);;
             display: inline-block;
             z-index: 2;
             border-radius: 10px;
@@ -154,7 +154,97 @@
             margin:0px;
         }
         /* Style the tab */
-      
+        .warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 25px;
+  margin:0px 0px;
+  background:rgb(250, 102, 188);;
+  display:inline-block;
+  color:gray;
+  border-radius:10px 10px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #f0c7dd80;
+}
+.panels{
+    text-align: left;
+  background:aliceblue;
+  box-shadow: 0 2rem 2rem #f0c7dd80;
+  min-height:350px;
+  width:100%;
+  max-width:100%;
+  border-radius:10px;
+  overflow:hidden;
+  padding:0px;  
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+  background:aliceblue;
+  color:#000;
+  
+}
+img .polygon{ 
+ -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+.hex {
+    margin-top: 30px;
+    width: 104px;
+    height: 60px;
+    background-color: beige;
+    border-color: beige;
+    position: relative;
+    display: inline-block;
+}
+.hex:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 30px solid;
+    border-color: inherit;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+}
+.hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid;
+    border-color: inherit;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
     </style>
 </head>
 <body>
@@ -190,7 +280,35 @@
             <img src="2.jpg" class="shoes">
             <div style="text-align:left; font-weight: bold; margin:30% 15%;">Card Component</div>
         </div>   
-        <div class="content_box4"></div>    
+        <div class="content_box4">
+            <div class="warpper">
+                <input class="radio" id="one" name="group" type="radio" checked>
+                <input class="radio" id="two" name="group" type="radio">
+                <input class="radio" id="three" name="group" type="radio">
+                <div class="tabs">
+                <label class="tab" id="one-tab" for="one">Options</label>
+                <label class="tab" id="two-tab" for="two">Info</label>
+                <label class="tab" id="three-tab" for="three">Stats</label>
+                  </div>
+                <div class="panels">
+                <div class="panel" id="one-panel">
+                  <div class="panel-title">Lorem.</div>
+                  <p>Lorem, ipsum dolor.</p>
+                </div>
+                <div class="panel" id="two-panel">
+                  <div class="panel-title">Lorem.</div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="panel" id="three-panel">
+                  <div class="panel-title">Bitris Thurman</div>
+                  <p>Audience Report</p>
+                  <img src="2.jpg" class="hex">
+                  
+                </div>
+                </div>
+              </div>
+              
+        </div>    
     </div>
     
 </div>

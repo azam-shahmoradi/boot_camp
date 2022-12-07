@@ -1,0 +1,115 @@
+
+body {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+
+.menu{
+    display:inline-block;
+   
+}
+ul{
+    display: inline-block;
+    right:calc(100% / 2);
+    list-style-type: none;
+    
+    margin-top: 10px;
+    margin-left: calc(100%-100px);
+    padding: 0px;
+    width: 100vw;
+} 
+.navbar{
+    position: relative;
+   display: inline-block;
+    color: rgb(85, 84, 83);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    
+    margin-bottom: 1.5vh;
+    box-shadow: 0px 2px 8px  rgb(214, 228, 248);
+}
+.list{
+    display: inline;
+    float: center;
+}
+.list-a{
+    
+   
+    display: inline-block;
+    color: rgb(77, 74, 74);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 70;
+    padding: 1px 5px;
+    margin: 1px auto;
+    font-size: small;
+    
+}
+a:hover{
+    color:rgb(3, 3, 3)
+}
+
+.circle{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    
+    position: absolute;
+    top:5px;
+    right:100px;
+}
+.cube{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    border-radius: 100%;
+    
+    position: absolute;
+    top:15px;
+    left:100px;
+}
+main{
+    width:calc(100% - 200px);
+    display: inline-block;
+    margin: 10px  100px;
+}
+p{
+    width:350px;
+    height:50px;
+    color: gray;
+    display: block;
+    line-height: 30px;
+    font-size: medium;
+}
+.box{
+    display: block;
+    width:calc(100% /2);
+    height:100%;
+    float:right;
+    
+}
+.verticalBox{
+    display: block;
+    width:calc(100% /2.5);
+    height:calc(100% /3);
+    border-radius: 10px;
+    background-color: darkblue;
+    margin: 2px;
+   
+    float: right;
+    
+}
+.horizontalBox{
+    display: inline-block;
+    width:calc(100% /5.1);
+    height:calc(100% /2.5);
+    border-radius: 10px;
+    background-color: darkblue;
+    margin:2px;  
+    
+    
+    
+}

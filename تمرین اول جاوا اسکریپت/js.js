@@ -1,5 +1,5 @@
 function EvenNumber() {
-   
+   console.clear();
     for (let index = 2; index < 7000; index=index+2) {
         console.log(index);
     }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    
+    <style>
+        .right{
+            float:right;
+        }
+    </style>
+    
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="coi-6">
+            <label>first name:</label>
+            <input class="form-control m-2" name="firstName" id="firstName" type="text" placeholder=" نام">
+            <label>last name:</label>
+            <input class="form-control m-2" name="lastName" id="lastName" type="text" placeholder="نام خانوادگی">
+            <input class="btn bg-info right" id="submit" type="submit" value="ثبت" >
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <table class="table table-stripped" id="table1">
+                <tr>
+                    <th>#</th>
+                    <th>firstName</th>
+                    <th>lastName</th>
+                    <th>Action</th>
+                </tr>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
